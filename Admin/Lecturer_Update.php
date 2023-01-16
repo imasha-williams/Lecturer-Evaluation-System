@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
     $email=$row["email"];
     $phone=$row["mobile"];
     $nic=$row["nic"];
-    $dob=$row["dob"];
+    $dob=$row["birth_day"];
     $gender=$row["gender"];
   }else {
     header('Location: Lecturer_View.php');
