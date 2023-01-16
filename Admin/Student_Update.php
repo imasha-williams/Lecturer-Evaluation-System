@@ -28,7 +28,7 @@ if (isset($_GET['id'])) {
     $email=$row["email"];
     $phone=$row["mobile"];
     $nic=$row["nic"];
-    $dob=$row["dob"];
+    $dob=$row["birth_day"];
     $gender=$row["gender"];
   }else {
     header('Location: Student_View.php');
@@ -43,21 +43,6 @@ if (isset($_GET['id'])) {
   $dob='';
   $gender='';
 }
-
-/*$sql = "SELECT * FROM `class`;";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  $Select_Class = '';
-  while ($row = $result->fetch_assoc()) {
-      $value = "<option value='" . $row["class_name"] . "'>" . $row["class_name"] . "</option>";
-      $Select_Class =  $Select_Class . $value;
-  }
-} else {
-  $Select_Class = "<option></option>";
-}
-*/
-
 
 html_header("Student_Update");
 
